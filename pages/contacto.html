@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link-->
+    <link rel="stylesheet" href="/assest/css/style.css">
+    <title>Cuentos del Bosque</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+
+            <!--Imagen del logo-->
+            <div class="header__img">
+                <img src="/assest/img/cuentos del bosque.webp" alt="logo-cuentos-del-bosque">
+            </div>
+
+            <!--barra de navegación del header-->
+            <nav class="navbar">
+                <ul>
+                    <li><a class="navbar__title" href="/index.html"> Home</a></li>
+                    <li><a class="navbar__title" href="/pages/about-us.html">Acerca de Nosotros</a></li>
+                    <li><a class="navbar__title" href="/pages/prendas.html">Ropa</a></li>
+                    <li><a class="navbar__title" href="/pages/faq.html">Preguntas Frecuentes</a></li>
+                    <li><a class="navbar__title" href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1 class="title--h1">Contáctanos</h1>
+                <h2 class="contact__title--h2">Si tienes alguna sugrencia o consulta puedes dejarnos tu consulta aquí:</h2>
+            </div>
+            <div>
+                <form class="contac__form" action="/submit" method="post">
+                    <!-- Etiqueta contenedora de formulario-->
+                    <label class="label" for="nombre">Nombre:</label>
+                    <input class="input" type="text" name="nombre" id="nombre">
+                    <label class="label"for="email">Mail:</label>
+                    <input class="input" type="email" name="email" id="email">
+                    <label class="label"for="mensaje">Describa su consulta</label>
+                    <textarea class="input" name="mensaje" id="mensaje"></textarea>
+                <button class="contact__submit" type="submit">Enviar Consulta</button>
+                </form>
+            </div>
+            <div class="contact__wa">
+                <p>Tambien puedes escribirnos directo al whatsapp</p>
+                <a href="https://wa.me/15551234567"><img class="contact--logowa" src="/assest/img/Whatsapp.png" alt="logo Whatsapp"> </a>
+                <p id="conctac--click"> Has click sobre el Logo de Whatsapp</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__divimg">
+            <img class="footer--logo" src="/assest/img/cuentos del bosque.webp" alt="logo-cuentos-del-bosque">
+        </div>
+        <div class="footer__box">
+            <div class="footer__list">
+                <h5>Navegación</h5>
+                <ul>
+                    <li><a href="/index.html"> Home</a></li>
+                    <li><a href="/pages/about-us.html">Acerca de Nosotros</a></li>
+                    <li><a href="/pages/prendas.html">Ropa</a></li>
+                    <li><a href="/pages/faq.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer__list">
+                <h5>Información</h5>
+                <ul class="footerlist__inf">
+                    <li class="footer--inf"> Cordoba - Argentina</li>
+                    <li class="footer--inf">cuentosdelbosque@gmail.com</li>
+                    <li class="footer--inf">Buscanos en las redes</li>
+                </ul>
+                <div class="footer--socialmedia">
+                    <a href="https://wa.me/15551234567"><img src="/assest/img/Whatsapp.png" alt="logo Whatsapp"> </a>
+                    <a href="https://www.instagram.com/test"><img src="/assest/img/Instagram.png" alt="Logo Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=AHR_vIZ_eq8&list=RDAHR_vIZ_eq8&start_radio=1"><img
+                            src="/assest/img/Youtube.png" alt="Logo Youtube"> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,507 @@
+* {
+    /*Reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*/Importaciones */
+
+/*Generales */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    color: rgb(90, 79, 75);
+}
+
+h2 {
+    color: #786a64;
+    font-size: 21px;
+    font-style: italic;
+
+}
+
+h3 {
+    color: #827c78;
+
+}
+
+p {
+    color: #241f1e;
+}
+
+.label{
+    padding: 20px 15px;
+}
+
+.input{
+    margin: 5px 15px;
+    width: 500px;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.title--h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 55px;
+    font-style: italic;
+}
+.container{
+    margin-bottom: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #e8d8ca;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+}
+
+header div img{
+    width: 200px;
+    padding-left: 15px;
+}
+
+.navbar{
+    margin-left: 30px;
+}
+
+.navbar ul{
+display: flex;
+flex-direction: row;
+}
+
+.navbar ul li a{
+    padding: 12px;
+}
+
+.navbar__title {
+    color: #3a3331;
+}
+
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav__link a{
+    padding: 5px 0;
+    clip-path: circle(0% at top left);
+    transition: clip-path .4s;
+}
+
+.nav__link a:target {
+    clip-path: circle(150% at left);
+
+}
+
+.hambuerguesa__logo{
+    width: 80px;
+}
+
+/* /Header*/
+
+/*Footer */
+footer {
+    background-color: #e8d8ca;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+footer h5 {
+    color: #5f3d33;
+}
+
+footer a {
+    color: #3a3331;
+}
+
+.footer__divimg{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.footer--logo{ 
+    width: 100%;
+    height: 80%;
+    padding-left: 50px;
+}
+footer img {
+    width: 50px;
+    padding-left: 10px
+}
+
+.footer__box{
+    width: 600px;
+    display: flex;
+    justify-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 25px 25px;
+}
+
+.footer__list ul{
+    padding-top: 10px;
+}
+
+.footerlist__inf{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--inf{
+    padding-bottom: 7px;
+}
+
+.footer--socialmedia{
+width: 50px;
+margin-top: 15px;
+display: flex;
+justify-content:baseline;
+}
+
+/*/Footer */
+
+/*/Generales */
+
+/* Especificos- Index */
+/* Seccion 1: Titulo, Slogan y presentación*/
+.valor {
+    background-color: #e8d8ca;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    border: #e8d8ca solid 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.valor__title{
+    text-align: center;
+}
+.valor__box {
+    margin: 13px;
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+}
+
+.valor__cards {
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    padding: 10px 20px 30px 20px;
+}
+
+.valores {
+    width: 350px;
+    text-align: right;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f5e7dc;
+}
+
+.valor__video {
+    width: 600px;
+    display: flex;
+    padding-top: 30px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+}
+
+/* /Seccion 1: Titulo, Slogan y presentación*/
+
+/* Seccion 2: elecciones de prendas*/
+
+.prendas__section {
+    display: flex;
+    flex-flow: column;
+}
+
+.prendas__rabbit {
+
+    display: flex;
+    justify-content: center;
+}
+
+.prendas__rabbit img {
+    width: 20%;
+    margin: 100px 0;
+}
+
+.prendas__img {
+    height: 300px;
+}
+
+.prendas__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.prendas__box h4 {
+    color: #5f4f49;
+    font-size: 50px;
+    font-style: oblique;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.card_item a {
+    height: 320px;
+}
+
+.prendas-seleccionadas__cards {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card_item {
+    height: 550px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.card_item h2 {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.card_item p {
+    width: 300px;
+    font-weight: 150;
+    padding: 5px 30px;
+}
+
+/* /Seccion 2: Telecciones de prendas*/
+/* /Especificos - Index */
+
+/*Especificos - about-us */
+
+.about__title {
+    width: 100%;
+    margin: 50px 0 10px 0;
+    text-align: center;
+}
+
+.about__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.about__card h3{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.about__card p{
+    width: 90%;
+    text-align: right;
+
+}
+
+#about--slogan{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.img--about{
+width: 500px;
+display: flex;
+justify-content: center;
+}
+
+.about__img1 img{
+    width: 400px;
+}
+
+.about__img2 img{
+    width: 180px;
+}
+
+.about__card{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin: 35px 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about__cards{
+    width: 400px;
+display: flex;
+flex-direction: column;
+}
+
+/* /Especificos - about-us */
+
+/* Especificos - contacto */
+
+.contact__title--h2{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+.contac__form{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#mensaje{
+    height: 80px;
+}
+
+.contact__wa{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact__wa p{
+    color: #5a4f4b;
+    font-size: 25px;
+}
+.contact--logowa{
+    width: 300px;
+}
+
+#conctac--click{
+    font-size: 12px;
+}
+
+.contact__submit{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px 8px;
+    background-color: #5a4b45;
+    color: #eee7e1;
+}
+
+.contact__submit:hover{
+    background-color: #eee7e1;
+    color: #5a4b45;
+}
+
+.input:focus{
+    background-color:#eee1d6 ;
+}
+/* /Especificos - contacto */
+
+/* Especificos - faq */
+
+.faq__section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.faq_box{
+    margin: 25px 50px 25px 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffede1 ;
+
+}
+
+.faq__img{
+    width: 130px;
+    height: 130px;
+}
+
+.faq__h2{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.faq--info{
+    padding-left: 20px;
+}
+
+.faq--info h3{
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+/* /Especificos - faq */
+
+/* /Especificos - ropa */
+.ropa__h2{
+    margin-left: 15px;
+}
+.ropa__section{
+    margin: 30px 0;
+}
+
+
+
+/*/Especificos */
+
+/* referecias*/
+
+/* Responsive */
+
+/* Tablet */
+@media (max-width:991px) {}
+
+/* Celular */
+@media(max-width:480px) {}
+
+/* /Responsive */
