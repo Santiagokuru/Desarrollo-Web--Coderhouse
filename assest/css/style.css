@@ -82,7 +82,7 @@ header div img{
 }
 
 .navbar{
-    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .navbar ul{
@@ -491,7 +491,15 @@ flex-direction: column;
 /* Responsive */
 
 /* Tablet */
-@media (max-width:991px) {}
+@media (max-width:991px) {
+        .nav__hamb{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navbar{
+        display: none;
+    }
+}
 
 /* Celular */
 @media(max-width:480px) {
