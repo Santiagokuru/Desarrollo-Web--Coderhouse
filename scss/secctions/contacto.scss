@@ -1,0 +1,59 @@
+/* Especificos - contacto */
+
+.contact__title--h2{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+.contac__form{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#mensaje{
+    height: 80px;
+}
+
+.contact__wa{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact__wa p{
+    color: #5a4f4b;
+    font-size: 25px;
+}
+.contact--logowa{
+    width: 300px;
+}
+
+#conctac--click{
+    font-size: 12px;
+}
+
+.contact__submit{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px 8px;
+    background-color: #5a4b45;
+    color: #eee7e1;
+}
+
+.contact__submit:hover{
+    background-color: #eee7e1;
+    color: #5a4b45;
+}
+
+.input:focus{
+    background-color:#eee1d6 ;
+}
+/* /Especificos - contacto */

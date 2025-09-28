@@ -1,0 +1,119 @@
+//Import
+@use 'sass:map';
+@use '../utilities/maps';
+@use '../utilities/extends';
+
+/* Seccion 1: Titulo, Slogan y presentación*/
+
+.tittle{
+    background-color: map.get(maps.$colores,color-fondo);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    .valor__title{
+        @extend%flex-center;
+        align-items: center;
+        flex-wrap:wrap ;
+        gap: 50px;
+        h1{
+            margin: 20px
+                }
+        h2{
+            font-size: 20px;
+        }
+    };
+    .valor{
+        @extend%flex-center;
+        justify-content: space-evenly;
+        .valor__box{
+            margin: 13px;
+            width: 500px;
+            @extend%flex-colum;
+            .valor__cards{
+                width: 400px;
+                @extend%flex-colum;
+                padding: 10px 20px 30px 20px;
+                .valores{
+                    width: 500px;
+                    text-align: right;
+                    margin: 5px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    background-color: #f5e7dc;
+                    h3{
+                        padding-left: 10px;
+                        text-align: left
+                    }
+                };
+            }
+        }
+        .video{
+            width: 500px;
+            display: flex;
+            padding-top: 30px;
+            padding-right: 10px;
+            justify-content: center;
+            align-items: center;
+            }
+    }
+}
+/* /Seccion 1: Titulo, Slogan y presentación*/
+
+/* Seccion 2: elecciones de prendas*/
+
+.prendas-seleccionadas{
+    .prendas__section{
+        display: flex;
+        flex-flow: column;
+        .prendas__rabbit{
+            margin-top: 40px;
+            @extend%flex-center;
+            img{ 
+                width: 10%;
+                padding: 50px 0
+            }
+        }
+        .prendas__box{
+            @extend%flex-colum;
+            h4 {
+                color: #5f4f49;
+                font-size: 50px;
+                font-style: oblique;
+                text-align: center;
+                padding-bottom: 90px;
+            }
+            .prendas-seleccionadas__cards{
+                    margin-bottom: 100px;
+                    @extend%flex-center;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                .card_item{
+                        height: 550px;
+                        margin-bottom: 30px;
+                        display: grid;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        justify-items: center;
+                    .prendas__img{
+                        height: 300px;
+                    }
+                    h2{
+                        height: 100px;
+                        margin-bottom: 15p
+                    };
+                    a{
+                        height: 320px;
+                    }
+                    p{
+                        width: 300px;
+                        font-weight: 150;
+                        padding: 5px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* /Seccion 2: Telecciones de prendas*/
+/* /Especificos - Index */

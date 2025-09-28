@@ -1,0 +1,15 @@
+%flex-center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+%flex-colum{
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-row{
+    display: flex;
+    flex-direction: row;
+}

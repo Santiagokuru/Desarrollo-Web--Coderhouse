@@ -1,0 +1,53 @@
+//Variables
+@use 'sass:map';
+@use '../utilities/maps';
+@use '../base/variables';
+@use '../utilities/extends';
+
+/* Header */
+.header {
+    background-color: map.get(maps.$colores,color-fondo);
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    justify-content: variables.$justify-abierto;
+}
+
+header div img{
+    width: 200px;
+    padding-left: 15px;
+}
+
+.navbar{
+    margin-right: 30px;
+}
+
+.navbar ul{
+@extend%flex-row;
+}
+
+.navbar ul li a{
+    padding: 12px;
+}
+
+.navbar__title {
+    color: map.get(maps.$colores,color-info-footer);
+}
+
+
+.nav__link{
+    @extend%flex-colum;
+    align-items: flex-start;
+}
+
+.nav__hamb{ 
+    display: none;
+}
+.nav__hamb img{
+    width: 70px;
+    margin-right: 40px;
+}
+/* Header*/
