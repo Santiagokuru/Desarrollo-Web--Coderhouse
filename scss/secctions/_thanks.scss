@@ -1,0 +1,17 @@
+// Mensaje de contacto enviado
+@use '../utilities/extends';
+
+.thanks{
+    @extend%flex-colum;
+    h1{
+        margin: 40px 15px 10px 10px;
+    }
+    p{
+        margin: 10px 30px;
+    }
+    div{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}

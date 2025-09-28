@@ -1,0 +1,21 @@
+// Componentes bases
+@use 'base/initializers';
+@use 'base/generales'; 
+
+//Headder
+@use 'components/headder';
+
+//Footer
+@use 'components/footer';
+
+//Index
+@use 'secctions/index';
+@use 'secctions/about-us';
+@use 'secctions/contacto.scss';
+@use 'secctions/faq';
+@use 'secctions/prendas';
+@use 'secctions/thanks';
+
+
+//Queries
+@use 'base/queries'

@@ -1,0 +1,454 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  /*Reset css */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*importaciones */
+/*/Importaciones */
+/*Generales */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: rgb(90, 79, 75);
+}
+
+h2 {
+  color: #786a64;
+  font-size: 21px;
+  font-style: italic;
+}
+
+h3 {
+  color: #827c78;
+}
+
+p {
+  color: #241f1e;
+}
+
+.label {
+  padding: 20px 15px;
+}
+
+.input {
+  margin: 5px 15px;
+  width: 500px;
+  height: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.title--h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 55px;
+  font-style: italic;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+section .about__box .about__card .img--about, .tittle .valor__title, .tittle .valor, .prendas-seleccionadas .prendas__section .prendas__rabbit, .prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards, footer, footer .footer__divimg img, footer .footer__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thanks, section .about__box, section .about__box .about__card .about__cards, .tittle .valor .valor__box, .tittle .valor .valor__box .valor__cards, .prendas-seleccionadas .prendas__section .prendas__box, footer .footer__box .footer__list, footer .footer__box .footer__list .footerlist__inf, .nav__link {
+  display: flex;
+  flex-direction: column;
+}
+
+section .about__box .about__card, .navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Header */
+.header {
+  background-color: #e8d8ca;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  justify-content: space-between;
+}
+
+header div img {
+  width: 200px;
+  padding-left: 15px;
+}
+
+.navbar {
+  margin-right: 30px;
+}
+
+.navbar ul li a {
+  padding: 12px;
+}
+
+.navbar__title {
+  color: #3a3331;
+}
+
+.nav__link {
+  align-items: flex-start;
+}
+
+.nav__hamb {
+  display: none;
+}
+
+.nav__hamb img {
+  width: 70px;
+  margin-right: 40px;
+}
+
+/* Header*/
+/*Footer */
+footer {
+  background-color: #e8d8ca;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+footer .footer__divimg img {
+  width: 300px;
+  height: 130px;
+  margin-left: 40px;
+}
+footer .footer__box {
+  width: 600px;
+  justify-content: space-between;
+}
+footer .footer__box .footer__list {
+  padding: 10px 25px 25px 25px;
+}
+footer .footer__box .footer__list h5 {
+  color: #5f3d33;
+}
+footer .footer__box .footer__list ul {
+  padding-top: 10px;
+  color: #3a3331;
+}
+footer .footer__box .footer__list ul li a {
+  color: #3a3331;
+}
+footer .footer__box .footer__list .footerlist__inf .footer--inf {
+  padding-bottom: 7px;
+}
+footer .footer__box .footer__list .footer--socialmedia {
+  width: 50px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: baseline;
+}
+footer .footer__box .footer__list .footer--socialmedia a img {
+  width: 50px;
+  padding-left: 10px;
+}
+
+/*/Footer */
+/* Seccion 1: Titulo, Slogan y presentación*/
+.tittle {
+  background-color: #e8d8ca;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+.tittle .valor__title {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.tittle .valor__title h1 {
+  margin: 20px;
+}
+.tittle .valor__title h2 {
+  font-size: 20px;
+}
+.tittle .valor {
+  justify-content: space-evenly;
+}
+.tittle .valor .valor__box {
+  margin: 13px;
+  width: 500px;
+}
+.tittle .valor .valor__box .valor__cards {
+  width: 400px;
+  padding: 10px 20px 30px 20px;
+}
+.tittle .valor .valor__box .valor__cards .valores {
+  width: 500px;
+  text-align: right;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f5e7dc;
+}
+.tittle .valor .valor__box .valor__cards .valores h3 {
+  padding-left: 10px;
+  text-align: left;
+}
+.tittle .valor .video {
+  width: 500px;
+  display: flex;
+  padding-top: 30px;
+  padding-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* /Seccion 1: Titulo, Slogan y presentación*/
+/* Seccion 2: elecciones de prendas*/
+.prendas-seleccionadas .prendas__section {
+  display: flex;
+  flex-flow: column;
+}
+.prendas-seleccionadas .prendas__section .prendas__rabbit {
+  margin-top: 40px;
+}
+.prendas-seleccionadas .prendas__section .prendas__rabbit img {
+  width: 10%;
+  padding: 50px 0;
+}
+.prendas-seleccionadas .prendas__section .prendas__box h4 {
+  color: #5f4f49;
+  font-size: 50px;
+  font-style: oblique;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards {
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards .card_item {
+  height: 550px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards .card_item .prendas__img {
+  height: 300px;
+}
+.prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards .card_item h2 {
+  height: 100px;
+  margin-bottom: 15p;
+}
+.prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards .card_item a {
+  height: 320px;
+}
+.prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards .card_item p {
+  width: 300px;
+  font-weight: 150;
+  padding: 5px 30px;
+}
+
+/* /Seccion 2: Telecciones de prendas*/
+/* /Especificos - Index */
+/*Especificos - about-us */
+section .about__title {
+  width: 100%;
+  margin: 50px 0 10px 0;
+  text-align: center;
+}
+section .about__box {
+  align-items: center;
+}
+section .about__box .about__card {
+  width: 1000px;
+  margin: 35px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+section .about__box .about__card .about__cards {
+  width: 400px;
+}
+section .about__box .about__card h3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+section .about__box .about__card p {
+  width: 90%;
+  text-align: right;
+}
+section .about__box .about__card #about--slogan {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 300;
+  font-style: italic;
+}
+section .about__box .about__card .img--about {
+  width: 500px;
+}
+section .about__box .about__card .about__img1 img {
+  width: 400px;
+}
+section .about__box .about__card .about__img2 img {
+  width: 180px;
+}
+
+/* /Especificos - about-us */
+/* Especificos - contacto */
+.contact__title--h2 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+.contac__form {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mensaje {
+  height: 80px;
+}
+
+.contact__wa {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__wa p {
+  color: #5a4f4b;
+  font-size: 25px;
+}
+
+.contact--logowa {
+  width: 300px;
+}
+
+#conctac--click {
+  font-size: 12px;
+}
+
+.contact__submit {
+  margin-top: 30px;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px 8px;
+  background-color: #5a4b45;
+  color: #eee7e1;
+}
+
+.contact__submit:hover {
+  background-color: #eee7e1;
+  color: #5a4b45;
+}
+
+.input:focus {
+  background-color: #eee1d6;
+}
+
+/* /Especificos - contacto */
+/* Especificos - faq */
+.faq__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.faq__section .faq__h2 {
+  font-size: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.faq__section .faq_box {
+  margin: 25px 50px 25px 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffede1;
+}
+.faq__section .faq_box .faq__img {
+  width: 130px;
+  height: 130px;
+}
+.faq__section .faq_box .faq--info {
+  align-content: center;
+  padding-left: 20px;
+}
+.faq__section .faq_box .faq--info h3 {
+  padding-bottom: 20px;
+}
+
+/* /Especificos - faq */
+/* /Especificos - ropa */
+.ropa__section {
+  margin: 30px 0;
+}
+.ropa__section .ropa_box .ropa__h2 {
+  margin-left: 30px;
+  margin-top: 50px;
+  padding-bottom: 15px;
+  font-size: 45px;
+}
+
+.thanks h1 {
+  margin: 40px 15px 10px 10px;
+}
+.thanks p {
+  margin: 10px 30px;
+}
+.thanks div {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .nav__hamb {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar {
+    display: none;
+  }
+}
+/* Celular */
+@media (max-width: 480px) {
+  .nav__hamb {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar {
+    display: none;
+  }
+  .valor__video {
+    padding: 12px;
+  }
+  .faq_box {
+    padding: 15px 0;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+//Variables
+@use 'sass:map';
+@use '../utilities/maps';
+@use '../base/variables';
+@use '../utilities/extends';
+
+/*Footer */
+footer{
+    background-color: map.get(maps.$colores,color-fondo);
+    width: 100%;
+    @extend%flex-center;
+    justify-content: variables.$justify-abierto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    .footer__divimg{
+        img{
+            width: 300px;
+            height: 130px;
+            @extend%flex-center;
+            margin-left: 40px
+        }
+    };
+    .footer__box{
+        width: 600px;
+        @extend%flex-center;
+        justify-content:variables.$justify-abierto;
+        .footer__list{
+            @extend%flex-colum;
+            padding: 10px 25px 25px 25px;
+            h5{color: map.get(maps.$colores,color-title-footer)};
+            ul{
+                padding-top: 10px;
+                color: map.get(maps.$colores,color-info-footer);
+                li{
+                    a{color: map.get(maps.$colores,color-info-footer)}
+                }
+            };
+            .footerlist__inf{
+                @extend%flex-colum;
+                .footer--inf{
+                    padding-bottom: 7px;
+                }
+            };
+            .footer--socialmedia{
+                width: 50px;
+                margin-top: 15px;
+                display: flex;
+                justify-content:baseline;
+                a{
+                    img{
+                        width: 50px;
+                        padding-left: 10px
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+/*/Footer */

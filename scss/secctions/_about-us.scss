@@ -1,0 +1,53 @@
+//import
+@use '../utilities/extends';
+
+/*Especificos - about-us */
+section{
+    .about__title{ 
+        width: 100%;
+        margin: 50px 0 10px 0;
+        text-align: center;
+    };
+    .about__box{
+        @extend%flex-colum;
+        align-items: center;
+        .about__card{
+            width: 1000px;
+            @extend%flex-row;
+            margin: 35px 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .about__cards{
+                    width: 400px;
+                    @extend%flex-colum;
+            }
+            h3{
+                text-align: center;
+                padding-bottom: 15px;
+            };
+            p{
+                width: 90%;
+                text-align: right;
+            };
+            #about--slogan{
+                text-align: center;
+                padding-top: 10px;
+                font-weight: 300;
+                font-style: italic;
+            }
+            .img--about{width: 500px;
+                @extend%flex-center;
+            };
+            .about__img1{
+                    img{ width: 400px;}
+                };
+            .about__img2{
+                    img{ width: 180px;}
+                } 
+            }
+        }
+    }
+
+
+/* /Especificos - about-us */
