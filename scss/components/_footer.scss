@@ -6,7 +6,7 @@
 
 /*Footer */
 footer{
-    background-color: map.get(maps.$colores,color-fondo);
+    background: map.get(maps.$colores,color-gradiente-footer);
     width: 100%;
     @extend%flex-center;
     justify-content: variables.$justify-abierto;
