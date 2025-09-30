@@ -6,7 +6,7 @@
 /* Seccion 1: Titulo, Slogan y presentación*/
 
 .tittle{
-    background-color: map.get(maps.$colores,color-fondo);
+    background: map.get(maps.$colores,color-gradiente);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -26,6 +26,7 @@
     .valor{
         @extend%flex-center;
         justify-content: space-evenly;
+        
         .valor__box{
             margin: 13px;
             width: 500px;

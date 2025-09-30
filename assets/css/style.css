@@ -124,7 +124,7 @@ header div img {
 /* Header*/
 /*Footer */
 footer {
-  background-color: #e8d8ca;
+  background: linear-gradient(to top, #e8d8ca, #e8d8ca, #ffffff);
   width: 100%;
   justify-content: space-between;
   padding-top: 50px;
@@ -169,7 +169,7 @@ footer .footer__box .footer__list .footer--socialmedia a img {
 /*/Footer */
 /* Seccion 1: Titulo, Slogan y presentación*/
 .tittle {
-  background-color: #e8d8ca;
+  background: linear-gradient(#e8d8ca, #ffffff);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
