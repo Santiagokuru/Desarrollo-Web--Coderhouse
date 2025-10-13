@@ -16,21 +16,21 @@
 </head>
 
 <body>
-    <header>
+        <header>
         <div class="header">
 
             <!--Imagen del logo-->
-            <div class="header__img">
+            <div class="header--img">
                 <img src="/assets/img/cuentos del bosque.webp" alt="logo-cuentos-del-bosque">
             </div>
-            <div class="nav__hamb">
-                <img src="/assets/img/menu ham.png" alt="Menu hamburguesa">
+            <div class="nav__hamb" onclick="mostrar()">
+                <img src="/assets/img/menu ham.webp" alt="Menu hamburguesa" >
             </div>
 
             <!--barra de navegación del header-->
-            <nav class="navbar">
+            <nav id="navbar">
                 <ul>
-                    <li><a class="navbar__title" href="/index.html"> Home</a></li>
+                    <li><a class="navbar__title" href="../index.html"> Home</a></li>
                     <li><a class="navbar__title" href="/pages/about-us.html">Acerca de Nosotros</a></li>
                     <li><a class="navbar__title" href="/pages/prendas.html">Ropa</a></li>
                     <li><a class="navbar__title" href="/pages/faq.html">Preguntas Frecuentes</a></li>
@@ -43,7 +43,7 @@
         <section class="ropa__section">
             <!--Presentacion-->
             <div class="container">
-                <div class="row">
+                <div class="row d-flex justify-content-start">
                     <div class="col-10">
                         <h1>Prendas</h1>
                         <h2>Prendas bordadas a mano con amor </h2>
@@ -56,34 +56,34 @@
                 <h2 class="ropa__h2">Vestidos bordados</h2>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4 d-flex align-items-center">
                             <img class="w-100" src="/assets/img/vestido 1.webp" alt="vestido blanco con flores">
                         </div>
                         <div class="col-4 ml-3">
                             <h3>Vestido Reina "Isabel I" </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elits Obcaecati quas temporibus accusantium?
+                            <p>Al mejor estilo reina de Inglaterra</p>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4 d-flex align-items-center">
                             <img class="w-100" src="/assets/img/vestido 3.webp" alt="vestido blanco con flores">
                         </div>
                         <div class="col-4 ml-3 pt-3">
                             <h3>Vestido Reina "Catalina de Aragon"</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas temporibus accusantium?</p>
+                            <p>Un digno vestido español</p>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4 d-flex align-items-center">
                             <img class="w-100" src="/assets/img/vestido 9.webp" alt="vestido blanco con flores">
                         </div>
                         <div class="col-4 ml-3 pt-3">
                             <h3>Vestido "Juana de Arco"</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas temporibus accusantium?</p>
+                            <p>Señorita y guerrera, un gran vestido </p>
                         </div>
                     </div>
                 </div>
@@ -93,34 +93,34 @@
                 <h2 class="ropa__h2">Jardineros</h2>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
-                            <img class="w-100" src="/assets/img/jardinero 1.jfif" alt="Jardinero Jean ">
+                        <div class="col-4 d-flex align-items-center">
+                            <img class="w-100" src="../assets/img/jardinero 1.webp" alt="Jardinero Jean ">
                         </div>
                         <div class="col-4 ml-3 pt-3">
                             <h3>Jardinero Jean </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elits Obcaecati quas temporibus accusantium?
+                            <p>Para todos los dias... irrompible
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
-                            <img class="w-100" src="/assets/img/jardinero 4 final.jpg" alt="Jardinero marron">
+                        <div class="col-4 d-flex align-items-center">
+                            <img class="w-100" src="/assets/img/jardinero 4 final.webp" alt="Jardinero marron">
                         </div>
                         <div class="col-4 ml-3 pt-3">
                             <h3>Jardinero marron</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas temporibus accusantium?</p>
+                            <p>¿No parece un osito?</p>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
-                            <img class="w-100" src="/assets/img/jardinero 2.jfif" alt="Jardinero Rosa">
+                        <div class="col-4 d-flex align-items-center">
+                            <img class="w-100" src="/assets/img/jardinero 2.webp" alt="Jardinero Rosa">
                         </div>
                         <div class="col-4 ml-3 pt-3">
                             <h3>Jardinero Rosa</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas temporibus accusantium?</p>
+                            <p>Bello y tierno, para la princesa</p>
                         </div>
                     </div>
                 </div>
@@ -130,34 +130,34 @@
                 <h2 class="ropa__h2">Camisas Elegantes</h2>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
-                            <img class="w-100" src="/assets/img/niño 2.jpg" alt="camisa azul marino">
+                        <div class="col-4 d-flex align-items-center">
+                            <img class="w-100" src="/assets/img/niño 2.webp" alt="camisa azul marino">
                         </div>
                         <div class="col-4 ml-3 pt-3">
                             <h3>Camisa azul con bolsillo </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elits Obcaecati quas temporibus accusantium?
+                            <p>Facherito</p>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
-                            <img class="w-100" src="/assets/img/niño4.jpg" alt="camisa crudo">
+                        <div class="col-4 d-flex align-items-center">
+                            <img class="w-100" src="/assets/img/niño4.webp" alt="camisa crudo">
                         </div>
                         <div class="col-4 ml-3 pt-3">
                             <h3>Camisa crudo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas temporibus accusantium?</p>
+                            <p>Suave y resfresacante</p>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
-                            <img class="w-100" src="/assets/img/niño 5.jfif" alt="camisa azul oscuro con detalle rojo">
+                        <div class="col-4 d-flex align-items-center">
+                            <img class="w-100" src="/assets/img/niño 5.webp" alt="camisa azul oscuro con detalle rojo">
                         </div>
                         <div class="col-4 ml-3 pt-3">
                             <h3>Camisa azul oscuro con detalle rojo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas temporibus accusantium?</p>
+                            <p>Elegnte y deportiva</p>
                         </div>
                     </div>
                 </div>
@@ -186,11 +186,11 @@
                     <li class="footer--inf">Buscanos en las redes</li>
                 </ul>
                 <div class="footer--socialmedia">
-                    <a href="https://wa.me/15551234567"><img src="/assets/img/Whatsapp.png" alt="logo Whatsapp"> </a>
-                    <a href="https://www.instagram.com/test"><img src="/assets/img/Instagram.png" alt="Logo Instagram">
+                    <a href="https://wa.me/15551234567"><img src="/assets/img/Whatsapp.webp" alt="logo Whatsapp"> </a>
+                    <a href="https://www.instagram.com/test"><img src="/assets/img/Instagram.webp" alt="Logo Instagram">
                     </a>
                     <a href="https://www.youtube.com/watch?v=AHR_vIZ_eq8&list=RDAHR_vIZ_eq8&start_radio=1"><img
-                            src="/assets/img/Youtube.png" alt="Logo Youtube"> </a>
+                            src="/assets/img/Youtube.webp" alt="Logo Youtube"> </a>
                 </div>
             </div>
         </div>
@@ -198,6 +198,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script src="/assets/js/headder.js"></script>
 </body>
 
 </html>

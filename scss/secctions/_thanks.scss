@@ -13,5 +13,13 @@
         margin-bottom: 50px;
         display: flex;
         justify-content: center;
+        .contact__submit{
+                margin-top: 30px;
+                width: 150px;
+                height: 50px;
+                border-radius: 20px 8px;
+                background-color: #5a4b45;
+                color: #eee7e1;
+        }
     }
 }
