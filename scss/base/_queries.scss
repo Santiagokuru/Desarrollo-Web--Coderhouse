@@ -1,31 +1,187 @@
 /* Tablet */
+@use '../utilities/maps';
 @media (max-width:991px) {
-        .nav__hamb{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .navbar{
-        display: none;
+    body {
+        header {
+            .nav__hamb {
+                display: flex;
+                justify-content: flex-end;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            #navbar.show {
+                transform: translate(0);
+            }
+
+            ;
+
+            #navbar {
+                position: absolute;
+                background-color: #e8d8ca;
+                width: 100%;
+                height: 30vh;
+                top: 120px;
+                justify-items: end;
+                transform: translateX(-100%);
+                transition: transform 1s;
+
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 50px;
+
+                    li {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+
+        ;
+
+        main {
+            .row {
+                justify-content: space-around;
+            }
+        }
+
+        ;
+
+        footer {
+            justify-content: center;
+
+            .footer__box {
+                padding-top: 50px;
+            }
+        }
     }
 }
 
 /* Celular */
 @media(max-width:480px) {
-    .nav__hamb{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .navbar{
-        display: none;
-    }
+    body {
+        header {
+            .nav__hamb {
+                display: flex;
+                justify-content: flex-end;
 
-    .valor__video{
-        padding: 12px;
-    }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
 
-    .faq_box {
-        padding: 15px 0;
-        align-items: center;
+            #navbar.show {
+                transform: translate(0);
+            }
+
+            ;
+
+            #navbar {
+                position: absolute;
+                background-color: #e8d8ca;
+                width: 100%;
+                height: 30vh;
+                top: 120px;
+                justify-items: end;
+                transform: translateX(-100%);
+                transition: transform 1s;
+
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 50px;
+
+                    li {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        };
+
+        main {
+            .tittle {
+                .valor {
+                    .valor__box {
+                        // width: auto;
+                        .valor__cards {
+                            width: 300px;
+
+                            .valores {
+                                display: flex;
+                                flex-direction: column;
+                                width: 300px !important;
+                            }
+
+                            ;
+                        }
+
+                        ;
+                    }
+
+                    .video {
+                        width: 300px !important;
+                    }
+                }
+            };
+            section{
+                .about__box{
+                .about__card{
+                    width: auto;
+                    flex-wrap: wrap;
+                    };
+                };
+                .contact__title--h2{
+                    padding: 0 15px;
+                };
+                .contact--box{
+                    flex-direction: column;
+                    div{
+                        .contac__form{
+                            .input{
+                                width: 250px;
+                            };
+                        };
+                    }
+                    .contact__wa{
+                        p {
+                            padding: 25px;
+                        }
+                    };
+                }
+            };
+            .ropa__section{
+                .container{
+                    .row{
+                        justify-content: center !important;
+                    }
+                }
+            };
+            .ropa_box{
+                h2{};
+                .container{
+                    .row{
+                        .col-4{};
+                        .ml-3{}
+                    }
+                };
+            };
+            .row {
+                justify-content: space-around;
+            }
+            
+        };
+
+
+        footer {
+            justify-content: center;
+            .footer__box {
+                padding-top: 50px;
+            }
+        }
     }
 }
 
+;

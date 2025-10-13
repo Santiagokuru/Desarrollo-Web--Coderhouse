@@ -74,13 +74,14 @@ section .about__box .about__card .img--about, .tittle .valor__title, .tittle .va
   flex-direction: column;
 }
 
-section .about__box .about__card, .navbar ul {
+section .about__box .about__card, #navbar ul {
   display: flex;
   flex-direction: row;
 }
 
 /* Header */
 .header {
+  height: 25vh;
   background-color: #e8d8ca;
   text-transform: uppercase;
   font-weight: 500;
@@ -96,11 +97,11 @@ header div img {
   padding-left: 15px;
 }
 
-.navbar {
+#navbar {
   margin-right: 30px;
 }
 
-.navbar ul li a {
+#navbar ul li a {
   padding: 12px;
 }
 
@@ -258,7 +259,7 @@ footer .footer__box .footer__list .footer--socialmedia a img {
   margin-bottom: 15p;
 }
 .prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards .card_item a {
-  height: 320px;
+  height: 300px;
 }
 .prendas-seleccionadas .prendas__section .prendas__box .prendas-seleccionadas__cards .card_item p {
   width: 300px;
@@ -388,6 +389,7 @@ section .contact--box .contact__wa #conctac--click {
 .faq__section .faq_box .faq--info {
   align-content: center;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 .faq__section .faq_box .faq--info h3 {
   padding-bottom: 20px;
@@ -416,32 +418,123 @@ section .contact--box .contact__wa #conctac--click {
   display: flex;
   justify-content: center;
 }
+.thanks div .contact__submit {
+  margin-top: 30px;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px 8px;
+  background-color: #5a4b45;
+  color: #eee7e1;
+}
 
 /* Tablet */
 @media (max-width: 991px) {
-  .nav__hamb {
+  body header .nav__hamb {
     display: flex;
     justify-content: flex-end;
   }
-  .navbar {
-    display: none;
+  body header .nav__hamb:hover {
+    cursor: pointer;
+  }
+  body header #navbar.show {
+    transform: translate(0);
+  }
+  body header #navbar {
+    position: absolute;
+    background-color: #e8d8ca;
+    width: 100%;
+    height: 30vh;
+    top: 120px;
+    justify-items: end;
+    transform: translateX(-100%);
+    transition: transform 1s;
+  }
+  body header #navbar ul {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+  }
+  body header #navbar ul li {
+    padding-top: 10px;
+  }
+  body main .row {
+    justify-content: space-around;
+  }
+  body footer {
+    justify-content: center;
+  }
+  body footer .footer__box {
+    padding-top: 50px;
   }
 }
 /* Celular */
 @media (max-width: 480px) {
-  .nav__hamb {
+  body header .nav__hamb {
     display: flex;
     justify-content: flex-end;
   }
-  .navbar {
-    display: none;
+  body header .nav__hamb:hover {
+    cursor: pointer;
   }
-  .valor__video {
-    padding: 12px;
+  body header #navbar.show {
+    transform: translate(0);
   }
-  .faq_box {
-    padding: 15px 0;
+  body header #navbar {
+    position: absolute;
+    background-color: #e8d8ca;
+    width: 100%;
+    height: 30vh;
+    top: 120px;
+    justify-items: end;
+    transform: translateX(-100%);
+    transition: transform 1s;
+  }
+  body header #navbar ul {
+    flex-direction: column;
     align-items: center;
+    margin-right: 50px;
+  }
+  body header #navbar ul li {
+    padding-top: 10px;
+  }
+  body main .tittle .valor .valor__box .valor__cards {
+    width: 300px;
+  }
+  body main .tittle .valor .valor__box .valor__cards .valores {
+    display: flex;
+    flex-direction: column;
+    width: 300px !important;
+  }
+  body main .tittle .valor .video {
+    width: 300px !important;
+  }
+  body main section .about__box .about__card {
+    width: auto;
+    flex-wrap: wrap;
+  }
+  body main section .contact__title--h2 {
+    padding: 0 15px;
+  }
+  body main section .contact--box {
+    flex-direction: column;
+  }
+  body main section .contact--box div .contac__form .input {
+    width: 250px;
+  }
+  body main section .contact--box .contact__wa p {
+    padding: 25px;
+  }
+  body main .ropa__section .container .row {
+    justify-content: center !important;
+  }
+  body main .row {
+    justify-content: space-around;
+  }
+  body footer {
+    justify-content: center;
+  }
+  body footer .footer__box {
+    padding-top: 50px;
   }
 }
 

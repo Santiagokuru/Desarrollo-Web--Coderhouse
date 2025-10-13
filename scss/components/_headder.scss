@@ -6,6 +6,7 @@
 
 /* Header */
 .header {
+    height: 25vh;
     background-color: map.get(maps.$colores,color-fondo);
     text-transform: uppercase;
     font-weight: 500;
@@ -21,15 +22,15 @@ header div img{
     padding-left: 15px;
 }
 
-.navbar{
+#navbar{
     margin-right: 30px;
 }
 
-.navbar ul{
+#navbar ul{
 @extend%flex-row;
 }
 
-.navbar ul li a{
+#navbar ul li a{
     padding: 12px;
 }
 
